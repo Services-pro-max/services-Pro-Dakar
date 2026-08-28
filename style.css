@@ -1,0 +1,245 @@
+/* Configuration de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #334155;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px; /* Format mobile compact propre */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* En-tête / Hero */
+.hero {
+    background: linear-gradient(135deg, #002244 0%, #074799 100%);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.main-logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    margin-bottom: 15px;
+    object-fit: cover;
+    background-color: white;
+}
+
+.hero h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.hero .subtitle {
+    font-size: 15px;
+    opacity: 0.9;
+    max-width: 400px;
+    margin: 0 auto 20px auto;
+}
+
+.btn-main {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #002244;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-main:active {
+    transform: scale(0.95);
+}
+
+/* Structure des sections et cartes */
+.section {
+    padding: 20px 0;
+}
+
+.card {
+    background: white;
+    padding: 25px 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    border: 1px solid #e2e8f0;
+}
+
+.card h2 {
+    color: #074799;
+    font-size: 18px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 2px solid #f1f5f9;
+    padding-bottom: 8px;
+}
+
+/* Images de produits */
+.product-image-container {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border: 1px solid #e2e8f0;
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Liste des Prestations */
+.section-intro {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.services-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.service-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 12px;
+    background-color: #f8fafc;
+    border-radius: 8px;
+}
+
+.service-item strong {
+    display: block;
+    color: #1e293b;
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+.service-item p {
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.4;
+}
+
+.text-primary {
+    color: #074799;
+    font-size: 18px;
+    margin-top: 3px;
+}
+
+.garanty-box {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f7ff;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    color: #074799;
+    border: 1px dashed #cbd5e1;
+}
+
+/* Zone de Localisation */
+.location-box {
+    display: flex;
+    gap: 15px;
+    background-color: #f0f7ff;
+    border-left: 4px solid #074799;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.location-icon {
+    color: #dc2626;
+    font-size: 22px;
+    margin-top: 3px;
+}
+
+.location-box h3 {
+    font-size: 16px;
+    color: #1e293b;
+    margin-bottom: 2px;
+}
+
+.location-details {
+    font-size: 13px;
+    color: #64748b;
+    margin-top: 4px;
+    line-height: 1.4;
+}
+
+/* Boutons WhatsApp et Contacts */
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-person {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.person-info {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #334155;
+}
+
+.btn-whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.2);
+}
+
+.btn-whatsapp:active {
+    background-color: #1ebd58;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 12px;
+    color: #94a3b8;
+}
